@@ -1,0 +1,82 @@
+.team {
+    background-color: var(--secondary-bcg-color);
+    padding: 94px 0;
+}
+
+.team__list {
+    list-style: none;
+    margin-top: 16px;
+    margin-bottom: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__card {
+    background-color: var(--basic-bcg-color);
+    margin: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.link__team {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.worker__container {
+    background-color: var(--basic-bcg-color);
+    padding: 30px;
+}
+
+.team__worker {
+    background-color: var(--basic-bcg-color);
+    color: var(--basic-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+.team__job {
+    background-color: var(--basic-bcg-color);
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.team__social {
+    margin-top: 16px;
+    margin-bottom: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__link {
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    fill: var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms, fill 250ms;
+}
+
+.team__link:hover,
+.team__link:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--basic-bcg-color);
+}

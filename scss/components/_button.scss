@@ -1,0 +1,26 @@
+.button {
+    background-color: var(--button-accent-color);
+    color: var(--button-text-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+
+    display: block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 216px;
+    border: 0;
+    margin: 30px auto 0;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
+
+    &:hover,
+    &:focus {
+            background-color: #188ce8;
+        }
+        &:active {
+             background-color: #188ce8;
+         }
+}
+
