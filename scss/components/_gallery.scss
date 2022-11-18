@@ -1,7 +1,11 @@
 .gallery {
+    display: none;
     list-style: none;
     padding-bottom: 94px;
     margin: 0;
+    @media (min-width: 1200px) {
+        display: block ;
+    }
 }
 
 .title {
@@ -17,6 +21,7 @@
 .gallery__list {
     display: flex;
     gap: 30px;
+
 }
 
 .gallery__working {

@@ -25,10 +25,12 @@
         <a class="logo" href="./index.html">Web<span class="logo-dark">Studio</span></a>
 
         <ul class="nav__list">
-          <li><a class="nav__link" href="./index.html">Студія</a></li>
-          <li><a class="nav__link--current" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="nav__link--current" href="./index.html">Студія</a></li>
+          <li><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="nav__link" href="">Контакти</a></li>
         </ul>
+
+        </button>
       </nav>
       <ul class="contacts__list">
         <li>
@@ -44,10 +46,16 @@
               <use href="./images/icon.svg#icon-smartphone"></use>
             </svg> +38 096 111 11 11
           </a>
+
         </li>
       </ul>
+      <button class="header__button-menu js-open-menu" type="button">
+        <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-menu"></use>
+        </svg>
     </div>
   </header>
+
 
 
   <main>
@@ -65,8 +73,17 @@
         <ul class="portfolio__list">
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
               <div class="portfolio__description">
-                <img src="./images/portfolio/portfolio1.jpg" alt="Ноутбук з відкритим додатком" width="370px" />
+                <picture>
+                  <source media="(min-width:768px )"
+                    srcset="./images/portfolio/portfolio1.jpg 1x, ./images/portfolio/portfolio1@2x.jpg 2x"
+                    src="./images/portfolio/portfolio1.jpg">
+                  <source media="(min-width:480px )"
+                    srcset="./images/portfolio/portfolio1.jpg 1x, ./images/portfolio/portfolio1@2x.jpg 2x"
+                    src="./images/portfolio/portfolio1.jpg">
+                  <img srcset="./images/portfolio/portfolio1.jpg 1x, ./images/portfolio/portfolio1@2x.jpg 2x"
+                    src="./images/portfolio/portfolio1.jpg" alt="Ноутбук з відкритим додатком" width="370px" />
 
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -81,8 +98,17 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio2.jpg"
-                  alt="Два прфесійних гравця грають у баскетбол" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width:768px )"
+                    srcset="./images/portfolio/portfolio2.jpg 1x, ./images/portfolio/portfolio2@2x.jpg 2x"
+                    src="./images/portfolio/portfolio2.jpg">
+                  <source media="(min-width:480px )"
+                    srcset="./images/portfolio/portfolio2.jpg 1x, ./images/portfolio/portfolio2@2x.jpg 2x"
+                    src="./images/portfolio/portfolio2.jpg">
+                  <img src="./images/portfolio/portfolio2.jpg" alt="Два прфесійних гравця грають у баскетбол"
+                    width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -95,8 +121,18 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio3.jpg"
-                  alt="Риба по верх неї написана назва ресторану" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio3.jpg 1x, ./images/portfolio/portfolio3@2x.jpg 2x"
+                    src="./images/portfolio/portfolio3.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio3.jpg 1x, ./images/portfolio/portfolio3@2x.jpg 2x"
+                    src="./images/portfolio/portfolio3.jpg">
+                  <img srcset="./images/portfolio/portfolio3.jpg 1x, ./images/portfolio/portfolio3@2x.jpg 2x"
+                    src="./images/portfolio/portfolio3.jpg" alt="Риба по верх неї написана назва ресторану"
+                    width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -111,8 +147,17 @@
             </a>
           </li>
           <li class="portfolio__block"><a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio4.jpg"
-                  alt="чорні великі навушники" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width:768px)"
+                    srcset="./images/portfolio/portfolio4.jpg 1x, ./images/portfolio/portfolio4@2x.jpg 2x"
+                    src="./images/portfolio/portfolio4.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio4.jpg 1x, ./images/portfolio/portfolio4@2x.jpg 2x"
+                    src="./images/portfolio/portfolio4.jpg">
+                  <img srcset="./images/portfolio/portfolio4.jpg 1x, ./images/portfolio/portfolio4@2x.jpg 2x"
+                    src="./images/portfolio/portfolio4.jpg" alt="чорні великі навушники" width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -126,8 +171,18 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio5.jpg"
-                  alt="Лежить дві коробочки, одна велика і біла, друга меньша та коричнева" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio5.jpg 1x, ./images/portfolio/portfolio5@2x.jpg 2x"
+                    src="./images/portfolio/portfolio5.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio5.jpg 1x, ./images/portfolio/portfolio5@2x.jpg 2x"
+                    src="./images/portfolio/portfolio5.jpg">
+                  <img srcset="./images/portfolio/portfolio5.jpg 1x, ./images/portfolio/portfolio5@2x.jpg 2x"
+                    src="./images/portfolio/portfolio5.jpg"
+                    alt="Лежить дві коробочки, одна велика і біла, друга меньша та коричнева" width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -141,8 +196,18 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio6.jpg"
-                  alt="Увімкнений манітор компьютера, запущена сторінка " width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio6.jpg 1x, ./images/portfolio/portfolio6@2.jpg 2x"
+                    src="./images/portfolio/portfolio6.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio6.jpg 1x, ./images/portfolio/portfolio6@2.jpg 2x"
+                    src="./images/portfolio/portfolio6.jpg">
+                  <img srcset="./images/portfolio/portfolio6.jpg 1x, ./images/portfolio/portfolio6@2.jpg 2x"
+                    src="./images/portfolio/portfolio6.jpg" alt="Увімкнений манітор компьютера, запущена сторінка "
+                    width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -155,8 +220,17 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio7.jpg"
-                  alt="Лежить відкритий світлий журнал" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio7.jpg 1x, ./images/portfolio/portfolio7@2x.jpg 2x"
+                    src="./images/portfolio/portfolio7.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio7.jpg 1x, ./images/portfolio/portfolio7@2x.jpg 2x"
+                    src="./images/portfolio/portfolio7.jpg">
+                  <img srcset="./images/portfolio/portfolio7.jpg 1x, ./images/portfolio/portfolio7@2x.jpg 2x"
+                    src="./images/portfolio/portfolio7.jpg" alt="Лежить відкритий світлий журнал" width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -169,8 +243,17 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio8.jpg"
-                  alt="Біла єтикетка з чорним надписом" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio8.jpg 1x, ./images/portfolio/portfolio8@2x.jpg 2x"
+                    src="./images/portfolio/portfolio8.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio8.jpg 1x, ./images/portfolio/portfolio8@2x.jpg 2x"
+                    src="./images/portfolio/portfolio8.jpg">
+                  <img srcset="./images/portfolio/portfolio8.jpg 1x, ./images/portfolio/portfolio8@2x.jpg 2x"
+                    src="./images/portfolio/portfolio8.jpg" alt="Біла єтикетка з чорним надписом" width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -183,8 +266,17 @@
             </a>
           </li>
           <li class="portfolio__block"> <a href="" class="portfolio__link ">
-              <div class="portfolio__description"> <img src="./images/portfolio/portfolio9.jpg"
-                  alt="Людина працює на ноутбуці" width="370px" />
+              <div class="portfolio__description">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/portfolio9.jpg 1x, ./images/portfolio/portfolio9@2x.jpg 2x"
+                    src="./images/portfolio/portfolio9.jpg">
+                  <source media="(min-width: 480px)"
+                    srcset="./images/portfolio/portfolio9.jpg 1x, ./images/portfolio/portfolio9@2x.jpg 2x"
+                    src="./images/portfolio/portfolio9.jpg">
+                  <img srcset="./images/portfolio/portfolio9.jpg 1x, ./images/portfolio/portfolio9@2x.jpg 2x"
+                    src="./images/portfolio/portfolio9.jpg" alt="Людина працює на ноутбуці" width="370px" />
+                </picture>
                 <p class="text__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                   сервісів. Все це дозволить
                   відвідувачу отримати
@@ -275,6 +367,50 @@
     </div>
 
   </footer>
+
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu__container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav__list">
+        <li><a class="mobile-menu__nav-link" href="./index.html">Студія</a></li>
+        <li><a class="mobile-menu__nav-link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="mobile-menu__nav-link" href="#">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts-list">
+        <li>
+          <a href="#" class="mobile-menu__contact-tel">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__contact-email">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__social-list">
+        <li>
+          <a href="#" class="mobile-menu__social">Instagram</a>
+          <span class="line"></span>
+        </li>
+
+        <li>
+          <a href="#" class="mobile-menu__social">Twitter</a>
+          <span class="line"></span>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__social">Facebook</a>
+          <span class="line"></span>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__social">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 

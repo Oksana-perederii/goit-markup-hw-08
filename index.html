@@ -28,6 +28,8 @@
           <li><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
           <li><a class="nav__link" href="">Контакти</a></li>
         </ul>
+
+        </button>
       </nav>
       <ul class="contacts__list">
         <li>
@@ -43,8 +45,13 @@
               <use href="./images/icon.svg#icon-smartphone"></use>
             </svg> +38 096 111 11 11
           </a>
+
         </li>
       </ul>
+      <button class="header__button-menu js-open-menu" type="button">
+        <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-menu"></use>
+        </svg>
     </div>
   </header>
 
@@ -117,21 +124,42 @@
         <ul class="gallery__list">
           <li>
             <div class="gallery__working">
-              <img class="gallery__foto" src="./images/box2.jpg" alt="людина щось набирає на клавіатурі" width="370" />
+              <picture>
+                <source media="max-width:768px" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  src="./images/box2.jpg">
+
+                <source media="(max-width:480px)" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  src="./images/box2.jpg">
+                <img class="gallery__foto" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
+                  src="./images/box2.jpg" alt="людина щось набирає на клавіатурі" width="370" />
+              </picture>
               <p class="gallery__description">Десктопні додатки</p>
             </div>
           </li>
           <li>
             <div class="gallery__working">
-              <img class="gallery__foto" src="./images/box02.jpg"
-                alt="людина зі смартфоном сидить перед увімкненим компьютером" width="370" />
+              <picture>
+                <source media="(min-width:768px )" srcset="./images/box02.jpg 1x, ./images/box02@2x.jpg 2x"
+                  src="./images/box02.jpg">
+                <source media="(min-width:480px )" srcset="./images/box02.jpg 1x, ./images/box02@2x.jpg 2x"
+                  src="./images/box02.jpg">
+                <img class="gallery__foto" srcset="./images/box02.jpg 1x, ./images/box02@2x.jpg 2x"
+                  src="./images/box02.jpg" alt="людина зі смартфоном сидить перед увімкненим компьютером" width="370" />
+              </picture>
               <p class="gallery__description">Мобільні додатки</p>
             </div>
           </li>
           <li>
             <div class="gallery__working">
-              <img class="gallery__foto" src="./images/box3.jpg"
-                alt="людина тримає в руках планшет із зображенням кольорової палітри" width="370" />
+              <picture>
+                <source media="(max-width: 768px )" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  src="./images/box3.jpg">
+                <source media="(max-width: 480px )" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  src="./images/box3.jpg">
+                <img class="gallery__foto" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
+                  src="./images/box3.jpg" alt="людина тримає в руках планшет із зображенням кольорової палітри"
+                  width="370" />
+              </picture>
               <p class="gallery__description">Дизайнерські рішення</p>
             </div>
           </li>
@@ -143,8 +171,14 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__card">
-            <img src="./images/img.jpg" alt="молодий чоловік в окулярах і коричневій рубашці посміхається"
-              width="270" />
+            <picture>
+              <source media="(max-width:768px)" srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
+                src="./images/img.jpg">
+              <source media="(max-width:480px)" srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
+                src="./images/img.jpg">
+              <img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg"
+                alt="молодий чоловік в окулярах і коричневій рубашці посміхається" width="270px" />
+            </picture>
             <div class="worker__container">
               <h3 class="team__worker">Ігор Дем'яненко</h3>
               <p class="team__job" lang="en">Product designer</p>
@@ -169,7 +203,14 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__foto" src="./images/img1.jpg" alt="дівчина білява посміхається" width="270" />
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img1.jpg">
+              <source media="(max-width: 480px)" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
+                src="./images/img1.jpg">
+              <img class="team__foto" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg"
+                alt="дівчина білява посміхається" width="270" />
+            </picture>
             <div class="worker__container">
               <h3 class="team__worker">Ольга Рєпіна</h3>
 
@@ -195,8 +236,14 @@
             </div>
           </li>
           <li class="team__card">
-            <img class="team__foto" src="./images/img2.jpg" alt="молодий чоловік у сірій рубашці посміхається"
-              width="270" />
+            <picture>
+              <source media="(max-width: 768px) " srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="./images/img2.jpg">
+              <source media="(max-width: 480px) " srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+                src="./images/img2.jpg">
+              <img class="team__foto" srcset="./images/img2.jpg 1x , ./images/img2@2x.jpg 2x" src="./images/img2.jpg"
+                alt="молодий чоловік у сірій рубашці посміхається" width="270" />
+            </picture>
             <div class="worker__container">
               <h3 class="team__worker">Микола Тарасов</h3>
               <p class="team__job" lang="en">Marketing</p>
@@ -221,8 +268,14 @@
             </div>
           </li>
           <ul class="team__card">
-            <img class="team__foto" src="./images/img3.jpg"
-              alt="молодий чоловік у чорній футболці стоїть на вулиці і посміхається" width="270" />
+            <picture>
+              <source media="(max-width:768px)" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3.jpg">
+              <source media="(max-width:480px)" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+                src="./images/img3.jpg">
+              <img class="team__foto" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg"
+                alt="молодий чоловік у чорній футболці стоїть на вулиці і посміхається" width="270" />
+            </picture>
             <div class="worker__container">
               <h3 class="team__worker">Михайло Єрмаков</h3>
               <p class="team__job" lang="en">UI designer</p>
@@ -372,6 +425,49 @@
     </div>
 
   </footer>
+
+  <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu__container">
+      <button class="mobile-menu__close-button js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__nav__list">
+        <li><a class="mobile-menu__nav-link" href="./index.html">Студія</a></li>
+        <li><a class="mobile-menu__nav-link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="mobile-menu__nav-link" href="#">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts-list">
+        <li>
+          <a href="#" class="mobile-menu__contact-tel">+38 096 111 11 11</a>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__contact-email">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu__social-list">
+        <li>
+          <a href="#" class="mobile-menu__social">Instagram</a>
+          <span class="line"></span>
+        </li>
+
+        <li>
+          <a href="#" class="mobile-menu__social">Twitter</a>
+          <span class="line"></span>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__social">Facebook</a>
+          <span class="line"></span>
+        </li>
+        <li>
+          <a href="#" class="mobile-menu__social">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__close" type="button" data-modal-close>
@@ -427,7 +523,7 @@
       </form>
     </div>
   </div>
-
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
