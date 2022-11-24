@@ -1,18 +1,24 @@
 .mobile-menu {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(-400%);
-  z-index: 1;
+  transform: translateY(-100%);
+  // z-index: 1;
   background-color: var(--basic-bcg-color);
-  padding: 40px;
+  padding: 40px 0 48px 25px;
   transition: cubic-bezier(0.4, 0, 0.2, 1) transform 250ms;
 
   &.is-open {
     transform: translateY(0);
+    display: block;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   &__close-button {
@@ -29,9 +35,14 @@
     }
   }
 
+  &__nav__list {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
   &__nav-link {
-    display: block;
-    margin-top: 32px;
     text-decoration: none;
     color: var(--basic-text-color);
     font-weight: 500;
@@ -47,12 +58,12 @@
   }
 
   &__contacts-list {
-    margin-top: 302px;
-    margin-bottom: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__contact-tel {
-    display: block;
     margin-bottom: 32px;
     text-decoration: none;
     color: var(--secondary-text-color);
@@ -84,14 +95,19 @@
 
   &__social-list {
     display: flex;
+    margin-top: 64px;
   }
 
   &__social {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--accent-text-color);
+
+    @media (min-width: 480px) {
+      font-size: 18px;
+    }
   }
 }
 

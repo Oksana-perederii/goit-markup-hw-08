@@ -3,6 +3,25 @@
   padding: 94px 0;
 }
 
+.team__title {
+  color: var(--basic-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 0.8;
+  text-align: center;
+  text-transform: none;
+  margin: 0 auto 50px;
+
+  @media (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: none;
+    margin: 0 auto 50px;
+  }
+}
+
 .team__list {
   list-style: none;
   margin-top: 0;

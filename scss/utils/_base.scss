@@ -30,8 +30,19 @@ img {
   margin: auto;
   padding: 0 15px;
 
+  @media (min-width: 480px) {
+    width: 480px;
+    margin: auto;
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
+    margin: auto;
+  }
+
   @media (min-width: 1200px) {
     width: 1230px;
+    margin: auto;
   }
 }
 

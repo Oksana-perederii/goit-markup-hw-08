@@ -83,12 +83,14 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  text-align: center;
+  display: block;
+  text-align: start;
   margin-left: 23px;
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     font-size: 14px;
     line-height: 1.7;
+    text-align: center;
   }
 }
 

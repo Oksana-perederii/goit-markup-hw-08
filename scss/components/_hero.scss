@@ -18,7 +18,11 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/bcg_img@2x.jpg");
+      url("../images/bcg_img@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    width: 768px;
   }
 
   @media (min-width: 1200px) {
@@ -30,13 +34,19 @@
   &__title {
     color: var(--primary-text-color);
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.6;
-    width: 360px;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media (min-width: 720px) {
+      width: 360px;
+      font-size: 26px;
+      line-height: 1.6;
+    }
 
     @media (min-width: 1200px) {
       margin: auto;
@@ -56,6 +66,7 @@
   color: var(--button-text-color);
   font-family: inherit;
   cursor: pointer;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
@@ -63,7 +74,7 @@
   display: block;
   padding: 10px 32px;
   border-radius: 4px;
-  width: 216px;
+  min-width: 216px;
   border: 0;
   margin: 30px auto 0;
   transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
@@ -75,5 +86,8 @@
 
   &:active {
     background-color: #188ce8;
+  }
+
+  @media (min-width: 480px) {
   }
 }
