@@ -133,7 +133,6 @@
 .contacts__list {
   display: none;
   gap: 30px;
-  margin-left: 344px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -145,7 +144,7 @@
   @media (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    margin-left: 315px;
+    margin-left: auto;
     justify-content: center;
     align-items: center;
     gap: 30px;
