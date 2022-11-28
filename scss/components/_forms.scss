@@ -87,10 +87,10 @@
   text-align: start;
   margin-left: 23px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.7;
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -101,7 +101,7 @@
   line-height: 1.2;
 
   letter-spacing: 0.03em;
-  @media (min-width: 480px) {
+  @media (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.7;
   }

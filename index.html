@@ -13,7 +13,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
-  <link href="css/main.min.css" rel="stylesheet" />
+  <link href="scss/main.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -124,27 +124,19 @@
         <ul class="gallery__list">
           <li>
             <div class="gallery__working">
-              <picture>
-                <source media="max-width:768px" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
-                  src="./images/box2.jpg">
-
-                <source media="(max-width:480px)" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
-                  src="./images/box2.jpg">
-                <img class="gallery__foto" srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
-                  src="./images/box2.jpg" alt="людина щось набирає на клавіатурі" width="370" />
-              </picture>
+              <img class="gallery__foto"
+                srcset="./images/images_desktop/box2.jpg 1x, ./images/images_desktop/box2@2x.jpg 2x"
+                src="./images/images_desktop/box2.jpg" alt="людина щось набирає на клавіатурі" width="370" />
               <p class="gallery__description">Десктопні додатки</p>
             </div>
           </li>
           <li>
             <div class="gallery__working">
               <picture>
-                <source media="(min-width:768px )" srcset="./images/box02.jpg 1x, ./images/box02@2x.jpg 2x"
-                  src="./images/box02.jpg">
-                <source media="(min-width:480px )" srcset="./images/box02.jpg 1x, ./images/box02@2x.jpg 2x"
-                  src="./images/box02.jpg">
-                <img class="gallery__foto" srcset="./images/box02.jpg 1x, ./images/box02@2x.jpg 2x"
-                  src="./images/box02.jpg" alt="людина зі смартфоном сидить перед увімкненим компьютером" width="370" />
+                <img class="gallery__foto"
+                  srcset="./images/images_desktop/box02.jpg 1x, ./images/images_desktop/box02@2x.jpg 2x"
+                  src="./images/images_desktop/box02.jpg" alt="людина зі смартфоном сидить перед увімкненим компьютером"
+                  width="370" />
               </picture>
               <p class="gallery__description">Мобільні додатки</p>
             </div>
@@ -152,13 +144,10 @@
           <li>
             <div class="gallery__working">
               <picture>
-                <source media="(max-width: 768px )" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
-                  src="./images/box3.jpg">
-                <source media="(max-width: 480px )" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
-                  src="./images/box3.jpg">
-                <img class="gallery__foto" srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
-                  src="./images/box3.jpg" alt="людина тримає в руках планшет із зображенням кольорової палітри"
-                  width="370" />
+                <img class="gallery__foto"
+                  srcset="./images/images_desktop/box3.jpg 1x, ./images/images_desktop/box3@2x.jpg 2x"
+                  src="./images/images_desktop/box3.jpg"
+                  alt="людина тримає в руках планшет із зображенням кольорової палітри" width="370" />
               </picture>
               <p class="gallery__description">Дизайнерські рішення</p>
             </div>
@@ -172,12 +161,15 @@
         <ul class="team__list">
           <li class="team__card">
             <picture>
-              <source media="(max-width:767px)" srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
-                src="./images/img.jpg">
-              <source media="(max-width:479px)" srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
-                src="./images/img.jpg">
-              <img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg"
-                alt="молодий чоловік в окулярах і коричневій рубашці посміхається" width="270px" />
+
+              <source media="(max-width:479px)" srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x"
+                src="./images/mobile/img.jpg">
+              <source media="(max-width:767px)" srcset="./images/tablet/img.jpg 1x, ./images/tablet/img@2x.jpg 2x"
+                src="./images/tablet/img.jpg">
+
+              <img srcset="./images/images_desktop/img.jpg 1x, ./images/images_desktop/img@2x.jpg 2x"
+                src="./images/images_desktop/img.jpg"
+                alt="молодий чоловік в окулярах і коричневій рубашці посміхається" />
             </picture>
             <div class="worker__container">
               <h3 class="team__worker">Ігор Дем'яненко</h3>
@@ -204,12 +196,14 @@
           </li>
           <li class="team__card">
             <picture>
-              <source media="(max-width: 767px)" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
-                src="./images/img1.jpg">
-              <source media="(max-width: 479px)" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
-                src="./images/img1.jpg">
-              <img class="team__foto" srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg"
-                alt="дівчина білява посміхається" width="270" />
+              <source media="(max-width: 479px)" srcset="./images/mobile/img1.jpg 1x, ./images/mobile/img1@2x.jpg 2x"
+                src="./images/mobile/img1.jpg">
+              <source media="(max-width: 767px)" srcset="./images/tablet/img1.jpg 1x, ./images/tablet/img1@2x.jpg 2x"
+                src="./images/tablet/img1.jpg">
+
+              <img class="team__foto"
+                srcset="./images/images_desktop/img1.jpg 1x, ./images/images_desktop/img1@2x.jpg 2x"
+                src="./images/images_desktop/img1.jpg" alt="дівчина білява посміхається" />
             </picture>
             <div class="worker__container">
               <h3 class="team__worker">Ольга Рєпіна</h3>
@@ -237,12 +231,14 @@
           </li>
           <li class="team__card">
             <picture>
-              <source media="(max-width: 767px) " srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
-                src="./images/img2.jpg">
-              <source media="(max-width: 479px) " srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
-                src="./images/img2.jpg">
-              <img class="team__foto" srcset="./images/img2.jpg 1x , ./images/img2@2x.jpg 2x" src="./images/img2.jpg"
-                alt="молодий чоловік у сірій рубашці посміхається" width="270" />
+              <source media="(max-width: 479px) " srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg 2x"
+                src="./images/mobile/img2.jpg">
+              <source media="(max-width: 767px) " srcset="./images/tablet/img2.jpg 1x, ./images/tablet/img2@2x.jpg 2x"
+                src="./images/tablet/">
+
+              <img class="team__foto"
+                srcset="./images/images_desktop/img2.jpg 1x , ./images/images_desktop/img2@2x.jpg 2x"
+                src="./images/images_desktop/img2.jpg" alt="молодий чоловік у сірій рубашці посміхається" />
             </picture>
             <div class="worker__container">
               <h3 class="team__worker">Микола Тарасов</h3>
@@ -269,12 +265,15 @@
           </li>
           <ul class="team__card">
             <picture>
-              <source media="(max-width:767px)" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
-                src="./images/img3.jpg">
-              <source media="(max-width:479px)" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
-                src="./images/img3.jpg">
-              <img class="team__foto" srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg"
-                alt="молодий чоловік у чорній футболці стоїть на вулиці і посміхається" width="270" />
+              <source media="(max-width:479px)" srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg 2x"
+                src="./images/mobile/">
+              <source media="(max-width:767px)" srcset="./images/tablet/img3.jpg 1x, ./images/tablet/img3@2x.jpg 2x"
+                src="./images/tablet/">
+
+              <img class="team__foto"
+                srcset="./images/images_desktop/img3.jpg 1x, ./images/images_desktop/img3@2x.jpg 2x"
+                src="./images/images_desktop/"
+                alt="молодий чоловік у чорній футболці стоїть на вулиці і посміхається" />
             </picture>
             <div class="worker__container">
               <h3 class="team__worker">Михайло Єрмаков</h3>

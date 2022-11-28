@@ -110,11 +110,15 @@
 }
 
 .social__container {
-  margin: 0;
-  margin-bottom: 60px;
-
+  @media (min-width: 480px) {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  @media (min-width: 768px) {
+    margin: 0;
+  }
   @media (min-width: 1200px) {
-    margin-left: 70px;
+    margin-left: 92px;
     margin-bottom: 0;
   }
 }
@@ -165,6 +169,10 @@
 }
 
 .email__form {
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -180,6 +188,10 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @media (min-width: 768px) {
+    align-items: center;
+  }
 
   @media (min-width: 1200px) {
     display: flex;
@@ -198,8 +210,12 @@
   background-color: var(--bcg-color);
   color: var(--primary-text-color);
 
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     width: 450px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 358px;
   }
 }
 

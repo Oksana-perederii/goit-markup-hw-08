@@ -59,6 +59,10 @@
   justify-content: center;
   width: 100%;
 
+  @media (min-width: 768px) {
+    justify-content: start;
+  }
+
   @media (min-width: 1200px) {
     max-width: 270px;
     justify-content: start;
