@@ -53,6 +53,12 @@
   font-size: 26px;
   font-style: normal;
   line-height: 1.2;
+  display: block;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .logo__light {
@@ -110,6 +116,7 @@
 }
 
 .social__container {
+  margin-bottom: 60px;
   @media (min-width: 480px) {
     margin: auto;
     margin-bottom: 60px;
@@ -131,6 +138,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+
   margin-bottom: 20px;
   text-align: center;
 
@@ -180,16 +188,17 @@
     flex-direction: column;
   }
   @media (min-width: 1200px) {
-    margin-left: 90px;
+    display: block;
     margin-left: 93px;
     flex-direction: row;
+    width: auto;
   }
 }
 
 .footer__button__container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 20px;
 
   @media (min-width: 768px) {
     align-items: center;
@@ -197,6 +206,7 @@
 
   @media (min-width: 1200px) {
     display: flex;
+    gap: 10px;
     align-items: center;
     flex-direction: row;
   }
@@ -222,7 +232,9 @@
 }
 
 .footer-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   padding: 10px;
   width: 200px;
@@ -231,6 +243,7 @@
   background-color: var(--button-accent-color);
   color: var(--button-text-color);
   font-family: inherit;
+  font-weight: 700;
   fill: var(--button-text-color);
   cursor: pointer;
   font-size: 16px;
@@ -240,9 +253,6 @@
   transition: cubic-bezier(0.4, 0, 0.2, 1) background-color 250ms;
 
   @media (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
   }
 }
